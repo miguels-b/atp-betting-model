@@ -4,7 +4,7 @@
  
 Built a CatBoost classifier from scratch using 14 years of ATP match data (36,000+ matches), custom Elo ratings with surface specialization and inactivity decay, and an adaptive betting strategy that adjusts thresholds and position sizing by market segment.
  
-Backtested on 2026 out-of-sample data: **+25.3% ROI** with the adaptive strategy, turning €1,000 into €2,914 in 3 months on 134 bets.
+Backtested on 2026 out-of-sample data: **+25.3% ROI** with the adaptive strategy, turning €1,000 into €2,914 in 3 months on 134 bets using the best odds for bigger profits. This ROI is extremely good and will soon be contrasted by LIVE-testing. 
  
 <br>
  
@@ -52,7 +52,7 @@ The model doesn't beat the market overall — that's expected and honest. The al
 | 1st Round | -18.8% | 45 | Excluded from strategy |
 | Masters 1000 | -6.5% | 35 | Higher threshold required |
  
-The adaptive strategy encodes this knowledge: lower thresholds and larger Kelly fractions for high-alpha segments, higher thresholds or exclusion for negative segments.
+The adaptive strategy encodes this knowledge: lower thresholds and larger Kelly fractions for high-alpha segments, higher thresholds or exclusion for negative segments. This means one of three things or a combination of them, the finals and semifinals are very predictable and profitable, the data from the odds on the database for finals and semifinals isn't accurate or as usually tennists in Finals and Semifinals are the ones who usually have more games throughout the year make the model predict very accurately.  
  
 <br>
  
