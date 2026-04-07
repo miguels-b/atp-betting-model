@@ -5,6 +5,8 @@
 Built a CatBoost classifier from scratch using 14 years of ATP match data (36,000+ matches), custom Elo ratings with surface specialization and inactivity decay, and an adaptive betting strategy that adjusts thresholds and position sizing by market segment.
  
 Backtested on 2026 out-of-sample data: **+25.3% ROI** with the adaptive strategy, turning €1,000 into €2,914 in 3 months on 134 bets using the best odds for bigger profits. This ROI is extremely good and will soon be contrasted by LIVE-testing. 
+
+This project has been developed in Spanish and soon will be available in English.
  
 <br>
  
