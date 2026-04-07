@@ -164,13 +164,22 @@ SEGMENT_CONFIG = {
 ```bash
 pip install catboost pandas numpy scikit-learn matplotlib requests openpyxl xlrd
 ```
+
+
+### Create the database of tennis games
+
+```bash
+python update_csv.py --build 
+```
  
 ### Train the model
  
 ```bash
 # Place your CSV/Excel files from tennis-data.co.uk in raw_data/
-python tennis_v4.py
+python tennis.py
 ```
+
+### Create the database of tennis games
  
 ### Daily workflow
  
@@ -215,11 +224,12 @@ Output:
 ## Project Structure
  
 ```
-├── tennis_v4.py          # Full pipeline: data → features → model → prediction
+├── tennis.py             # Full pipeline: data → features → model → prediction
 ├── update_csv.py         # Daily CSV updater (tennis-data.co.uk)
 ├── daily_scanner.py      # Match scanner with Oddschecker scraping
-├── tennis_v4.cbm         # Trained CatBoost model
-├── tennis_master.csv     # Master dataset
+├── odds_scraper.py       # Oddschecker scraping
+├── tennis_v4.cbm         # Trained CatBoost model (produced by tennis.py)
+├── tennis.csv            # Dataset
 ├── raw_data/             # Original CSV/Excel files (2012-2026)
 └── reports/              # Daily JSON reports
 ```
